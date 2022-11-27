@@ -50,19 +50,43 @@
         android:id="@+id/description_game"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Le test consiste à choisir la traduction correcte des mots proposés dans les écrans suivants, Bonne chance ! "
+        android:text="Le test consiste à choisir la traduction francaise correcte de chaque mot proposé en anglais . "
         android:layout_marginTop="20dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         />
 
+    <TextView
+        android:id="@+id/description_game2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Il y a 10 traductions à dérouler et 1 seule bonne réponse à cliquer par question.  "
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        />
+
+    <TextView
+        android:id="@+id/description_game3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="En fin de partie, votre score /10 sera automatiquement affiché. BONNE CHANCE! "
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        />
+
+
     <Button
         android:id="@+id/GoButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="15dp"
         android:layout_gravity="center"
-        android:text="C'est parti :-) !"></Button>
+       android:text="Let's go !  :-)"></Button>
+
+
 
 
 

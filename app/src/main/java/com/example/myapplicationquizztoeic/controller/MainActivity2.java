@@ -13,7 +13,6 @@ import com.example.myapplicationquizztoeic.R;
 import com.example.myapplicationquizztoeic.model.model.EnglishWord;
 import com.example.myapplicationquizztoeic.model.model.TraductionBank;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 // implémentation de l'interface View.OnClickListener
@@ -39,6 +38,8 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
     // declaration du nombre d'englishword à parcourir pour le test
     int mcompteur;
 
+    // Declaration du score du joueur
+    int mscore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +73,11 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
 
         // Le nombre total d'englishword est fixé à 10
         mcompteur =10;
+
+        // Initalisation de la variable score
+        mscore=0;
+
+
 
         }
 
@@ -175,7 +181,7 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
                 Arrays.asList("un petit fruit",
                         "un petit coin",
                         "les toilettes",
-                        "une pièce de monnaie",
+                        "une petite pièce de monnaie",
                         "un billet de banque"),
                 3);
 
@@ -241,6 +247,7 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
         if (index== mTraductionBank.getCurrentEnglishWord().getChoixIndex()){
             // si reponse correcte ==> affichage d'un toast avec mention "Bonne reponse"
             Toast.makeText(this,"Bonne réponse!",Toast.LENGTH_SHORT).show();
+            mscore++;
         } else{
             Toast.makeText(this,"Mauvaise réponse!",Toast.LENGTH_SHORT).show();
         }
@@ -249,6 +256,8 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
         mcompteur--;
 
         if(mcompteur>0){
+            // On continue le jeu
+            // Avec une temporisation de 4s avant d'acceder à l'englishword suivant
             Handler handler = new Handler();
             handler.postDelayed(new Runnable() {
                 public void run() {
@@ -260,13 +269,16 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
 
         } else{
             // Plus d'englishword à presenter, fin du jeu
-
+            // Affichage du score du joueur
+            Toast.makeText(this,"Le jeu est terminé ! ", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Votre score est : "+ mscore + "/10", Toast.LENGTH_SHORT).show();
+            //Temporisation de 10s avant de revenir à l'écran principal
             Handler handler = new Handler();
             handler.postDelayed(new Runnable() {
                 public void run() {
                     finish();
                 }
-            }, 5000);
+            }, 10000);
         }
 
         /* while (mcompteur<10){

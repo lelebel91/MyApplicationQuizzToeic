@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     TextView mTitleAppTextView;
     EditText mNameEditText;
     TextView mDescriptionTextView;
+    TextView mDescriptionTextView2;
+    TextView mDescriptionTextView3;
     Button mGoButton;
 
     //joueur mJoueur;
@@ -39,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         mTitleAppTextView = findViewById(R.id.Title_App);
         mNameEditText = findViewById(R.id.user_name);
         mDescriptionTextView = findViewById(R.id.description_game);
+        mDescriptionTextView2 = findViewById(R.id.description_game2);
+        mDescriptionTextView3 = findViewById(R.id.description_game3);
         mGoButton = findViewById(R.id.GoButton);
 
         mGoButton.setEnabled(false); // Bouton go rendu inactif tant que saisie nom utilisateur incorrecte

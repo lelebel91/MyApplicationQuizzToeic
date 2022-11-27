@@ -11,11 +11,12 @@
         android:id="@+id/EnglishWord"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_marginTop="100dp"
         android:gravity="center"
         android:textColor="@color/black"
         android:textSize="32sp"
         android:textStyle="bold"
+        android:background="#D2E9F0"
         android:text="English Word......" />
 
 
@@ -28,8 +29,8 @@
     <Button
         android:id="@+id/button_1"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:layout_gravity="center"
         android:textSize="20sp"
         android:text="Answer1" />
@@ -37,7 +38,7 @@
     <Button
         android:id="@+id/button_2"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:textSize="20sp"
@@ -46,7 +47,7 @@
     <Button
         android:id="@+id/button_3"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:textSize="20sp"
@@ -55,8 +56,8 @@
     <Button
         android:id="@+id/button_4"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_height="50dp"
         android:layout_gravity="center"
         android:textSize="20sp"
         android:text="Answer4" />
@@ -64,7 +65,7 @@
       <Button
         android:id="@+id/button_5"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:textSize="20sp"
