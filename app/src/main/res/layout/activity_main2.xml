@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/EnglishWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:text="English Word......" />
+
+
+    <!--attribut layout_weight -->
+    <!--cela impose donc une hauteur à 0 avec une orientation verticale-->
+    <!--des valeurs différentes permettraient de definir -->
+    <!--le poids d'un elt par rapport à un autre -->
+    <!--notre choix : mettre 1 partout et ne pas faire de differences de poids-->
+    <!-- ABANDON de cette idée car la réponse Correct/incorrect surcharge alors les boutons -->
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="Answer1" />
+
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="Answer2" />
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="Answer3" />
+
+    <Button
+        android:id="@+id/button_4"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="Answer4" />
+
+      <Button
+        android:id="@+id/button_5"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="Answer5" />
+</LinearLayout>
